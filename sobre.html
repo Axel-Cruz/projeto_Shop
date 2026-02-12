@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hsl(60, 3%, 81%);
+            margin: 0; /*nao vai ter margin principal*/
+        }
+        
+      .container_inicial {
+        width: 100%;
+        background-color: #ffe636;
+
+        display: flex;
+        flex-direction: column; /*vai deixar um em baixo do outro*/
+        align-items: center;
+        /*vai alinhar os elementos na vertical no centro*/
+        justify-content: center;
+        /*vai alinhar os elementos na horizontal no centro*/
+      }
+
+      .container_informacao{
+        width: 60%;
+        margin: 20px auto; /*margin de cima pra baixo*/
+        background-color: #fff;
+        border-radius: 8px; /*vai deixar as bordas arredondadas*/
+        padding: 20px;
+        /*ele vai dar distancia da margem de dentro, vai afastar os elementos da borda do interior*/
+
+        display: flex;
+            flex-direction: column;
+            /*vai deixar um em baixo do outro*/
+            align-items: center;
+            /*vai alinhar os elementos na vertical no centro*/
+            justify-content: center;
+            /*vai alinhar os elementos na horizontal no centro*/
+      }
+      .container_informacao h2{
+        align-self: flex-start; /*vai alinhar a nossa historia na parte do lado esquerda*/
+      }
+      .container_informacao p{
+        text-align: justify; /*vai deixar o texto justificado*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_inicial">
+      <h1>Sobre a GeekShop</h1>
+      <p>Conheça a historia e valores que nos movem</p>
+    </div>
+    <div class="container_informacao">
+      <h2>Nossa História</h2>
+      <p>
+        A GeekShop foi fundada em 2020 com uma missão simples: trazer as
+        melhores cartas colecionáveis do mundo para os fãs brasileiros. O que
+        começou como uma pequena loja virtual se transformou em uma referência
+        no mercado de cartas raras e colecionáveis. </p> 
+        <p> Desde o início, acreditamos
+        que cada carta tem uma história para contar, e cada coletor tem uma
+        paixão que merece ser respeitada. </p> 
+        <p>Nosso compromisso é fornecer produtos
+        autênticos, com excelente qualidade e atendimento de primeira qualidade.
+        Hoje, servimos milhares de clientes satisfeitos em todo o Brasil,
+        expandindo constantemente nosso catálogo e melhorando nossa experiência
+        de compra. </p>
+      </p>
+    </div>
+    <div class="container_informacao">
+        <h1>Por Que Escolher a GeekShop?</h1>
+      </div>
+
+  </body>
+</html>
