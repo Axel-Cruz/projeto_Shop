@@ -30,7 +30,7 @@ function realizarLogin() {
     /* usamos 3 sinais de  === para comparar tanto o valor quanto o tipo de informação */
 
     window.location.href =
-      "home.html"; /*caso estiver certo vai mandar o usuario para esta tela */
+      "./pages/home/home.html"; /*caso estiver certo vai mandar o usuario para esta tela */
   } else {
     alert(
       "Credenciais incorretas",
