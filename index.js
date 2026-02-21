@@ -1,4 +1,5 @@
-function realizarLogin() {
+function realizarLogin(event) {
+  event.preventDefaut()
   var email =
     document.getElementById(
       "email",
@@ -55,6 +56,8 @@ esse é um modelo que é semi if e funciona igual
   }
   /* aqui ele vai mudar a senha quando clicar no botao exibir senha para o texto que é a senha */
 }
+
+document.getElementById("form_login").addEventListener("submit", realizarLogin)
 
 /* 1 pegar o valor do email em uma variavel
 2 pegar o valor da senha em uma variavel

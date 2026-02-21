@@ -1,83 +1,35 @@
 <!doctype html>
+
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../style/reset.css">
-
-    
-    <style>
-        body {
-            background-color: #3fbba3;
-        }
-
-        .container_login {
-            width: 40%;
-            /*tamanho que vai ocupar a tela*/
-            background-color: #fff;
-            margin: 80px auto;
-            /*da uma distancia do topo pra baixo*/
-            border-radius: 8px;
-            /*vai deixar o elemento com a borda arredondada*/
-            padding: 20px;
-            /*ele vai dar distancia da margem de dentro, vai afastar os elementos da borda do interior*/
-
-            display: flex;
-            flex-direction: column;
-            /*vai deixar um em baixo do outro*/
-            align-items: center;
-            /*vai alinhar os elementos na vertical no centro*/
-            justify-content: center;
-            /*vai alinhar os elementos na horizontal no centro*/
-        }
-
-        .input {
-            height: 54px;
-            /*altura*/
-            width: 100%;
-            /*vai ocupar toda a parte da div*/
-            box-sizing: border-box;
-            /*nao deica o elemento filho ficar maior que o elemento pai*/
-            padding-left: 10px;
-            /*vai afastar o elemento na parte esqueda. (left é esquerda)*/
-            margin-bottom: 20px;
-            /*vai se afastar dos dois elementos, do de cima e do de baixo*/
-        }
-
-        .button_login {
-            width: 100px;
-            height: 44px;
-            border-radius: 8px;
-            color: #fff;
-            background-color: #0b847a;
-            border: none;
-            /*sem borda no elemento*/
-            cursor: pointer;
-            /*vai deicar o mouse quando passar por cima uma maozinha */
-        }
-
-        .button_login:hover {
-            background-color: #10c4b5;
-            transform: scale(1.05);
-            /*para tranformar quando o mouse passa por cima do botao*/
-        }
-
-        .container_checkbox {
-            align-self: flex-start;
-            /*vai fazer o botao voltar pro lado da borda(esquerda), enquanto todos estao centralizados ele nao vai obedcer*/
-        }
-    </style>
+    <title>Login</title> <!--Titulo-->
+    <!--Estilos da pagina-->
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="./index.css" />
 </head>
 
-<body>
-    <div class="container_login">
-        <h1>Login</h1>
+<body> 
 
-        <input class="input" type="email" id="email" placeholder="Email" />
+    <form id="form_login" class="container_login">
+      <h1 class="login_texto">Login</h1>
 
-        <input class="input" type="password" id="senha" placeholder="Senha" />
+      <input
+        type="email"
+        id="email"
+        class="input"
+        placeholder="Email"
+        required
+      />
+
+      <input
+        id="senha"
+        type="password"
+        class="input"
+        placeholder="Senha"
+        required
+      />
 
         <div class="container_checkbox"> 
 
@@ -86,18 +38,16 @@
         
         </div>
 
-        <button class="button_login" type="button" onclick="realizarLogin()">
-
-            Entrar
-        </button>
+        <button class="button_login" type="submit">Entrar</button>
 
         <p>
             Ainda não tem conta?
-            <a href="">Crie Agora</a>
+            <a href="./sobre/sobre.html">Crie Agora</a>
         </p>
     </div>
+    </form>
 
-    <script src="../index.js"></script> 
+    <script src="../index.js"></script> <!--fiz isso para o o javascript seja visto por ultimo-->
 </body>
 
 </html>
