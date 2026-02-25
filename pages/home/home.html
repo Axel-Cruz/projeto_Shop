@@ -110,6 +110,17 @@
             gap: 10px;
             /*espaçamento entro os elementos*/
         }
+
+        .produtos_container {
+            max-width: 900px; /*largura da tela,*/
+            margin: 40px auto; /*40px de cima pra baixo, o auto vai destribuir nas laterais*/
+
+            display: flex;
+            gap: 10px;/*margem entre cada elemento*/
+            flex-wrap: wrap; /*se nao couber na pagina vai jogar os elementos pra baixo*/
+            justify-content: space-between;/*espaço igual entre os elementos*/
+            justify-content: center; /*centraliza os filhos*/
+        }
     </style>
 </head>
 
@@ -135,24 +146,66 @@
         <button>Exolorar</button>
     </div>
 
-    <div class="produto">
+        <div class="produtos_container">
 
-        <div class="produto_imagem_container">
-            <img src="../../Imagens/Dark Magician.jpg" class="produto_imagem" />
+            <div class="produto">
+                <div class="produto_imagem_container">
+                    <img src="../../Imagens/Dark Magician.jpg" class="produto_imagem" />
+                </div>
+                <div class="produto_informacao_container">
+                    <h3>Dark Magician</h3>
+                    <span>ULTRA RARO</span>
+                    <!-- quando for um texto pequeno pode ser usado o span. Quando for um texto maior usa o <p>-->
+                    <p>O mago mais iconico do YI-GI-HO</p>
+                    <span>R$ 120,00</span>
+                    <button>Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto_imagem_container">
+                    <img src="../../Imagens/Dark Magician.jpg" class="produto_imagem" />
+                </div>
+                <div class="produto_informacao_container">
+                    <h3>Dark Magician</h3>
+                    <span>ULTRA RARO</span>
+                    <!-- quando for um texto pequeno pode ser usado o span. Quando for um texto maior usa o <p>-->
+                    <p>O mago mais iconico do YI-GI-HO</p>
+                    <span>R$ 120,00</span>
+                    <button>Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto_imagem_container">
+                    <img src="../../Imagens/Dark Magician.jpg" class="produto_imagem" />
+                </div>
+                <div class="produto_informacao_container">
+                    <h3>Dark Magician</h3>
+                    <span>ULTRA RARO</span>
+                    <!-- quando for um texto pequeno pode ser usado o span. Quando for um texto maior usa o <p>-->
+                    <p>O mago mais iconico do YI-GI-HO</p>
+                    <span>R$ 120,00</span>
+                    <button>Adicionar</button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto_imagem_container">
+                    <img src="../../Imagens/Dark Magician.jpg" class="produto_imagem" />
+                </div>
+                <div class="produto_informacao_container">
+                    <h3>Dark Magician</h3>
+                    <span>ULTRA RARO</span>
+                    <!-- quando for um texto pequeno pode ser usado o span. Quando for um texto maior usa o <p>-->
+                    <p>O mago mais iconico do YI-GI-HO</p>
+                    <span>R$ 120,00</span>
+                    <button>Adicionar</button>
+                </div>
+            </div>
         </div>
 
-        <div class="produto_informacao_container">
-            <h3>Dark Magician</h3>
-            <span>ULTRA RARO</span>
-            <!-- quando for um texto pequeno pode ser usado o span. Quando for um texto maior usa o <p>-->
-            <p>O mago mais iconico do YI-GI-HO</p>
-            <span>R$ 120,00</span>
-            <button>Adicionar</button>
-        </div>
-
-    </div>
-
-    <script src="./home.js"></script>
+        <script src="./home.js"></script>
 </body>
 
 </html>
