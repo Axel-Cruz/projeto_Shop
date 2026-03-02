@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <script src="legumes.js" defer></script>
+
+    <style>
+      .title {
+        text-align: center;
+      }
+
+      body {
+        background: #d5d2d5;
+      }
+
+      .produto {
+        background-color: #fff;
+        border: 1px #000 solid;
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        /*
+        Pra usar o space-between, a div tem que ter um altura maior que o conteudo
+         justify-content: space-between;
+         height: 400px;
+        */
+      }
+
+      .produto_nome_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produto_precos_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produto_botoes_container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .produtos_container {
+        display: flex;
+        gap: 10px;
+
+        width: 70%;
+        margin: 40px auto;
+
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Lojinha do Se<div class="produto">
+        <img
+          width="100px"
+          src="https://phygital-files.mercafacil.com/big_mart/uploads/produto/br_colis_ninja_unidade_15a943f2-f033-4c56-9100-d98da2cb5a9a.png"
+        />
+
+        <div class="produto_nome_container" id= "lista">
+          <h2>Brocolis</h2>
+          <span>Cada - Aprox. 200g</span>
+        </div>
+
+        <span>Pomar Municipal</span>
+
+        <div class="produto_precos_container">
+          <span>3 reais</span>
+          <span>R$ 15,00 por KG</span>
+        </div>
+
+        <div class="produto_botoes_container">
+          <div>
+            <button>+</button>
+            <button>-</button>
+          </div>
+          <button>Add 1 item</button>
+        </div>
+      </div>nai</h1>
+
+    <div class="produtos_container">
+      
+    </div>
+  </body>
+</html>
