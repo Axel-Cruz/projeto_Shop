@@ -1,36 +1,14 @@
-const produtos = [
-    {
-id: 1, 
-nome: "Carta x",
-raridade: "Ultra Raro",
-preco: 120,
-descricao: "Mago mais iconico",
-imagem: "",
-}, 
-{
-id: 2, 
-nome: "Carta Teste",
-raridade: "Raro",
-preco: 125,
-descricao: "Teste mais iconico",
-imagem: "",
-}
-];
+ async function carregarDados(){
+ var resposta = await fetch("http://localhost:3000/products"); 
+/* ele vai levar as informações ate o servidor, e vai salvar na variavel. */
+var dados = await resposta.json(); /* vamos extrair as informações do json do banco de dados e salvar na variavel dados */ 
 
-/* produtos.forEach() 
- metedo para usar em toda variavel array,dentro dos ( ) 
- passar a funcao que voce quer que aconteca 
+/* async = asincrona (coisas que sao executadas com demora)
+   await = espere a resposta para responder 
+   ferct = metodo que vai buscar coisas no servidor*/
 
- produtos.forEach(function(meuItem){
-    console.log(meuItem); /* comando de loop dentro de um array
- }); */
- 
- /* desta forma abaixo que fazemos para 
- adicionar alguma coisa dentro da lista de array
- document.getElementById("lista").insertAdjacentHTML("afterbegin", meuProdutoHtml);
- */
 
- produtos.forEach(function(meuItem) {
+ dados.forEach(function(meuItem) {
     const meuProdutoHtml = ` 
     <div class="produto">
                 <div class="produto_imagem_container">
@@ -49,3 +27,21 @@ imagem: "",
     `;
     document.getElementById("lista").insertAdjacentHTML("afterbegin", meuProdutoHtml);
 }) ;
+
+
+}
+
+carregarDados(); /*Aqui estou chamando a função*/ 
+
+/* produtos.forEach() 
+ metedo para usar em toda variavel array,dentro dos ( ) 
+ passar a funcao que voce quer que aconteca 
+
+ produtos.forEach(function(meuItem){
+    console.log(meuItem); /* comando de loop dentro de um array
+ }); */
+ 
+ /* desta forma abaixo que fazemos para 
+ adicionar alguma coisa dentro da lista de array
+ document.getElementById("lista").insertAdjacentHTML("afterbegin", meuProdutoHtml);
+ */
