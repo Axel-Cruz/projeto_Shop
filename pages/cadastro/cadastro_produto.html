@@ -9,15 +9,74 @@
     <link rel="stylesheet" href="../../style/principal.css">
 
     <style>
+        .container_form {
+            width: 60%;
+            /*tamanho do elemento na tela*/
+            background-color: #f5f5f5;
+            margin: 40px auto;
+            /*margem de 40px na parte de cima*/
+            border-radius: 6px;
+            /*vai deixar as bordas arredondas*/
+            padding: 20px;
+            /*vair dar espaço nas bordas internas*/
 
+            display: flex;
+            flex-direction: column;
+
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            /*vai dar uma sombra de shadon box*/
+
+        }
+
+        .elemento_form {
+            padding: 12px;
+            /*vai dar espaçamento interno */
+            border: 2px solid #ccc;
+            /*borda solida*/
+            border-radius: 4px;
+            /*vai dar uma borda solida*/
+            font-size: 14px;
+            font-family: inherit;
+        }
     </style>
 
 
 </head>
 
 <body>
+    <form class="container_form" id="form_produto">
+        <h1>Cadastro de Produto</h1>
 
+        <label for="input_nome">Nome do produto</label>
+        <input placeholder="Ex: Mago negro" id="input_nome" class="elemento_form">
+
+        <label for="select_raridade">Raridade</label>
+        <select id="select_raridade" class="elemento_form">
+            <option>Selecione um Item</option>
+            <option>Comun</option>
+            <option>Raro</option>
+            <option>Ultra Raro</option>
+        </select>
+
+        <label for="input_preco"> Preço (R$) </label>
+        <input type="number" placeholder="R$0,00" id="input_preco" class="elemento_form">
+
+        <label for="textarea_descricao"></label>
+        <textarea id="textarea_descricao" class="elemento_form"></textarea>
+
+        <label for="input_imagem">Url da Imagem</label>
+        <input type="url" id="input_imagem" class="elemento_form" />
+
+        <button type="submit">Cadastrar</button>
+        <button>Limpar</button>
+
+
+    </form>
 </body>
 <script src="../carrinho/meu_script.js"></script>
 <script src="../../scripts/menu.js"></script>
+<script src="cadastro.js"></script>
+
 </html>
